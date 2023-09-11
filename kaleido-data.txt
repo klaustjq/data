@@ -1,0 +1,429 @@
+contract address:
+0x1f48fabc989c055f6bfca60b1ea3f69641142cb6
+
+deploy by:
+0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb
+
+node1:
+0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb
+0x3df39db5225e2983c4432497a29876c0c6543ccf
+
+App Cred information
+ID u0werewl6n
+Password xP44RHCb5thxlEbuy_tjMoMNCGgZoBJyunQ52U4kevg
+======================================================================
+paymentRequest:
+
+{"reqMsg":{"payer":{"identity":"0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb","lei":"lei","bic":"bic","legalName":"aaa","addressLn1":"some address","addressLn2":"some other address"},"payee":{"identity":"0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb","lei":"lei","bic":"bic","legalName":"bbb","addressLn1":"some address","addressLn2":"some other address"},"amount":1,"endToEndId":"5af8d55753354f57a77e3e281bf56123","fromAccount":{"bic":"bic","accountNumberHash":"068728245001","accountNameHash":"aaa","addressLn1":"some address","addressLn2":"some other address","ultimateName":"ultimateName"},"toAccount":{"bic":"bic","accountNumberHash":"002374965001","accountNameHash":"aaa","addressLn1":"some address","addressLn2":"some other address","ultimateName":"ultimateName"},"customerRefNumber":"fail","currencyCode":"HKD","chargeBearer":0,"remittanceInfo":{"narratives":["5a","5b"]},"paymentType":0}}
+
+{
+  "headers": {
+    "id": "aa9aa4e1-27e5-482e-6462-9c7fee105b7b",
+    "type": "TransactionSuccess",
+    "timeReceived": "2023-09-06T14:53:30.194409874Z",
+    "timeElapsed": 3.437024252,
+    "requestOffset": "",
+    "requestId": "e04df8c9-41eb-424d-6411-3d120e878c4a"
+  },
+  "blockHash": "0x430c87ea927f71bcd24e84614a7291a572d2ea0ff7f8992dbcc8c0301790d03a",
+  "blockNumber": "235716",
+  "cumulativeGasUsed": "843672",
+  "from": "0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb",
+  "gasUsed": "843672",
+  "nonce": "0",
+  "status": "1",
+  "to": "0x1f48fabc989c055f6bfca60b1ea3f69641142cb6",
+  "transactionHash": "0xb798baa9bbece36c9832058cf0f24cbe5ad2a76471fda2d72a58c81ced9de314",
+  "transactionIndex": "0"
+}
+
+event:
+[{
+	"address": "0x1f48FaBc989C055F6bfCA60b1EA3F69641142cB6",
+	"blockNumber": "235927",
+	"blockHash": "0xff332841646123ec3b4733e2cfc36eef4f7fd55b6433755201b4f3cfb624af0c",
+	"transactionIndex": "0x0",
+	"transactionHash": "0x0b2e5562012865b41a2b9de6b14b5e1526c2c1b9d53bc1e5bb819850ed36d4b6",
+	"data": {
+		"key": "0x0d86c0a32021cbb2e55911be651e75d06b4c8acae91074b11df92b0d4c289efd",
+		"reqRecord": {
+			"key": "0x0d86c0a32021cbb2e55911be651e75d06b4c8acae91074b11df92b0d4c289efd",
+			"paymentCompleteData": {
+				"settlementBankRef": "",
+				"settlementDate": "0"
+			},
+			"paymentRejectData": {
+				"rejectCode": "",
+				"rejectDate": "0",
+				"rejectReason": ""
+			},
+			"paymentReqData": {
+				"amount": "1",
+				"chargeBearer": "0",
+				"currencyCode": "HKD",
+				"customerRefNumber": "fail",
+				"endToEndId": "5af8d55753354f57a77e3e281bf56124",
+				"fromAccount": {
+					"accountNameHash": "aaa",
+					"accountNumberHash": "068728245001",
+					"addressLn1": "some address",
+					"addressLn2": "some other address",
+					"bic": "bic",
+					"ultimateName": "ultimateName"
+				},
+				"payee": {
+					"addressLn1": "some address",
+					"addressLn2": "some other address",
+					"bic": "bic",
+					"identity": "0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb",
+					"legalName": "bbb",
+					"lei": "lei"
+				},
+				"payer": {
+					"addressLn1": "some address",
+					"addressLn2": "some other address",
+					"bic": "bic",
+					"identity": "0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb",
+					"legalName": "aaa",
+					"lei": "lei"
+				},
+				"paymentType": "0",
+				"remittanceInfo": {
+					"narratives": ["5a", "5b"]
+				},
+				"toAccount": {
+					"accountNameHash": "aaa",
+					"accountNumberHash": "002374965001",
+					"addressLn1": "some address",
+					"addressLn2": "some other address",
+					"bic": "bic",
+					"ultimateName": "ultimateName"
+				}
+			},
+			"status": "1"
+		}
+	},
+	"subId": "sb-7ab1ebe5-183e-41f0-52af-2519400994e4",
+	"signature": "PaymentRequest(bytes32,(bytes32,(string,(address,string,string,string,string,string),(address,string,string,string,string,string),(string,string,string,string,string,string),(string,string,string,string,string,string),string,uint256,string,uint8,(string[]),uint8),(string,uint256),(string,string,uint256),uint8))",
+	"logIndex": "0"
+}]
+
+
+
+======================================================================================
+paymentComplete:
+
+{
+    "key": "0x0d86c0a32021cbb2e55911be651e75d06b4c8acae91074b11df92b0d4c289efd",
+    "settlementBankRef": "123",
+    "settlementDate": "20230906001"
+}
+
+
+{
+  "headers": {
+    "id": "7e8b2333-fbb3-4598-71a0-8a3aa2e27e21",
+    "type": "TransactionSuccess",
+    "timeReceived": "2023-09-06T15:12:51.937897784Z",
+    "timeElapsed": 3.029158874,
+    "requestOffset": "",
+    "requestId": "0bcfbaf1-a801-4115-5839-a542ba004ec8"
+  },
+  "blockHash": "0x96127165fe639012eab2f4ddd5dea74149e7127a9ea493ce204bc748bb3309f7",
+  "blockNumber": "235948",
+  "cumulativeGasUsed": "74516",
+  "from": "0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb",
+  "gasUsed": "74516",
+  "nonce": "0",
+  "status": "1",
+  "to": "0x1f48fabc989c055f6bfca60b1ea3f69641142cb6",
+  "transactionHash": "0x5f443937daf52e62fbe5d1e9fcd47ebcdb42543a202b4b2d27b9366e4986e71a",
+  "transactionIndex": "0"
+}
+
+[{
+	"address": "0x1f48FaBc989C055F6bfCA60b1EA3F69641142cB6",
+	"blockNumber": "235948",
+	"blockHash": "0x96127165fe639012eab2f4ddd5dea74149e7127a9ea493ce204bc748bb3309f7",
+	"transactionIndex": "0x0",
+	"transactionHash": "0x5f443937daf52e62fbe5d1e9fcd47ebcdb42543a202b4b2d27b9366e4986e71a",
+	"data": {
+		"key": "0x0d86c0a32021cbb2e55911be651e75d06b4c8acae91074b11df92b0d4c289efd",
+		"settlementBankRef": "123",
+		"settlementDate": "20230906001"
+	},
+	"subId": "sb-3ed27265-c69b-47b0-75e8-2c2a8f420420",
+	"signature": "PaymentComplete(bytes32,string,uint256)",
+	"logIndex": "0"
+}]
+
+================================================
+curl -X 'POST' \
+  'https://u0dp08kjkt-u0uywqoxjt-connect.us0-aws.kaleido.io/instances/0x1f48fabc989c055f6bfca60b1ea3f69641142cb6/paymentRequest?kld-from=0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb&kld-sync=true' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Basic dTBzNnd1dzl1dTowekZyT1d5ZVNiUXJsNWNMaUhKTXc4UHB2dW95czhZenlRcGhwdWZtVkhz' \
+  -d '{
+    "reqMsg":
+    {
+        "endToEndId": "5af8d56853354f57a77e3e286bf72ea6",
+        "payer":
+        {
+            "identity": "0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb",
+            "legalName": "aaa",
+            "lei": "lei",
+            "bic": "bic",
+            "addressLn1": "some address",
+            "addressLn2": "some other address"
+        },
+        "payee":
+        {
+            "identity": "0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb",
+            "legalName": "bbb",
+            "lei": "lei",
+            "bic": "bic",
+            "addressLn1": "some address",
+            "addressLn2": "some other address"
+        },
+        "fromAccount":
+        {
+            "accountNumberHash": "068728245001",
+            "accountNameHash": "aaa",
+            "bic": "bic",
+            "addressLn1": "some address",
+            "addressLn2": "some other address",
+            "ultimateName": "ultimateName"
+        },
+        "toAccount":
+        {
+            "accountNumberHash": "002374965001",
+            "accountNameHash": "aaa",
+            "bic": "bic",
+            "addressLn1": "some address",
+            "addressLn2": "some other address",
+            "ultimateName": "ultimateName"
+        },
+        "customerRefNumber": "fail",
+        "amount": 1,
+        "currencyCode": "HKD",
+        "chargeBearer": 0,
+        "remittanceInfo":
+        {
+            "narratives":
+            [
+                "5a",
+                "5b"
+            ]
+        },
+        "paymentType": 0
+    }
+}'
+
+
+
+curl -X 'POST' \
+  'https://u0dp08kjkt-u0uywqoxjt-connect.us0-aws.kaleido.io/instances/0x1f48fabc989c055f6bfca60b1ea3f69641142cb6/paymentComplete?kld-from=0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb&kld-sync=true' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Basic dTBzNnd1dzl1dTowekZyT1d5ZVNiUXJsNWNMaUhKTXc4UHB2dW95czhZenlRcGhwdWZtVkhz' \
+  -d '{
+  "key": "0x189313062a285f11af484e599efdbde6c602e4ef107d957c1fabff064d65a011",
+  "settlementBankRef": "111",
+  "settlementDate": "03396337343164612945624694246015056883399343116450475832515882071678011088521"
+}'
+
+================+++++++++++++++++++++====================
+ERC20:
+contract address: 0x45fc7fbac41897662fea70db2e56bf68cc0bddb5
+deploy by: 0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb
+===================mint
+curl -X 'POST' \
+  'https://u0dp08kjkt-u0uywqoxjt-connect.us0-aws.kaleido.io/instances/0x45fc7fbac41897662fea70db2e56bf68cc0bddb5/mint?kld-from=0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb&kld-sync=true' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Basic dTBzNnd1dzl1dTpLeENmUmhlQVcwSVJ6MFhZUGVzRjdUOHMtTWI0WEk5aGlfQnRyUE5tMUhr' \
+  -d '{
+  "amount": "100000",
+  "recipient": "0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb"
+}'
+
+{
+  "headers": {
+    "id": "5c0ac440-5068-4e33-6d65-0f970b191b43",
+    "type": "TransactionSuccess",
+    "timeReceived": "2023-09-08T07:33:50.051785887Z",
+    "timeElapsed": 4.738457401,
+    "requestOffset": "",
+    "requestId": "127639c8-a340-4b7f-65b6-8c5dad341e20"
+  },
+  "blockHash": "0xb5ea5461c6f1bf62c79954fb415a263ddfbb3664aad515c5a7830ecae8999598",
+  "blockNumber": "250746",
+  "cumulativeGasUsed": "69226",
+  "from": "0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb",
+  "gasUsed": "69226",
+  "nonce": "0",
+  "status": "1",
+  "to": "0x45fc7fbac41897662fea70db2e56bf68cc0bddb5",
+  "transactionHash": "0xeb07926d21cba482be9e0bb764efdd5690ac4981db3c871d98a237c4eebd07e9",
+  "transactionIndex": "0"
+} 
+
+
+=======================load
+curl -X 'POST' \
+  'https://u0dp08kjkt-u0uywqoxjt-connect.us0-aws.kaleido.io/instances/0x45fc7fbac41897662fea70db2e56bf68cc0bddb5/load?kld-from=0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb&kld-sync=true' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Basic dTBzNnd1dzl1dToxOVpmbW42aXlCSUZLQ21xYWVtM0VtLTZZenpLbW5DNjAxRi12OHVSaERJ' \
+  -d '{
+	"accountDetail": {
+		"accountNumberHash": "123456",
+		"accountNameHash": "123456",
+		"bic": "666",
+		"addressLn1": "abc",
+		"addressLn2": "abc",
+		"ultimateName": "123"
+	},
+	"amount": "10"
+}'
+
+{
+  "headers": {
+    "id": "9f59d22b-696d-4a0e-5023-cd12e7a5b0ba",
+    "type": "TransactionSuccess",
+    "timeReceived": "2023-09-11T14:32:06.533640612Z",
+    "timeElapsed": 2.702510483,
+    "requestOffset": "",
+    "requestId": "34d5e0f9-f753-45f1-44f8-a410b1793216"
+  },
+  "blockHash": "0xe1c5a490d2b040b21ad271a28a1c122af620cbf854a857922a12ba4c3911472e",
+  "blockNumber": "301795",
+  "cumulativeGasUsed": "39005",
+  "from": "0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb",
+  "gasUsed": "39005",
+  "nonce": "0",
+  "status": "1",
+  "to": "0x45fc7fbac41897662fea70db2e56bf68cc0bddb5",
+  "transactionHash": "0x1970c18ed124d973a9ce470f71b4350e31d6de09fc1e9f06e65de73a15aba4e6",
+  "transactionIndex": "0"
+}
+
+[{
+	"address": "0x45FC7FBaC41897662fEa70DB2e56BF68cC0bdDB5",
+	"blockNumber": "301889",
+	"blockHash": "0x323eedf678f7ad86997b22033a572b4290f9ace4f92e69fc5a3485127cde2124",
+	"transactionIndex": "0x0",
+	"transactionHash": "0x616e3b464bcbcdfbfd177c69b4edede74a0ba185ae6af349ffc3b700ad655914",
+	"data": {
+		"accountDetail": {
+			"accountNameHash": "123456",
+			"accountNumberHash": "123456",
+			"addressLn1": "abc",
+			"addressLn2": "abc",
+			"bic": "666",
+			"ultimateName": "123"
+		},
+		"amount": "10",
+		"recipient": "0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb",
+		"sender": "0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb"
+	},
+	"subId": "sb-a99014b9-8def-4e94-410c-3ec5d30adbe1",
+	"signature": "Load(address,address,(string,string,string,string,string,string),uint256)",
+	"logIndex": "0"
+}]
+
+
+=======================transfer
+curl -X 'POST' \
+  'https://u0dp08kjkt-u0uywqoxjt-connect.us0-aws.kaleido.io/instances/0x45fc7fbac41897662fea70db2e56bf68cc0bddb5/transfer?kld-from=0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb&kld-sync=true' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Basic dTBzNnd1dzl1dToxOVpmbW42aXlCSUZLQ21xYWVtM0VtLTZZenpLbW5DNjAxRi12OHVSaERJ' \
+  -d '{
+  "recipient": "0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb",
+  "amount": "20"
+}'
+
+{
+  "headers": {
+    "id": "622364fe-249f-4cf6-47cf-3618d648ee5a",
+    "type": "TransactionSuccess",
+    "timeReceived": "2023-09-11T14:46:09.58773363Z",
+    "timeElapsed": 5.111171624,
+    "requestOffset": "",
+    "requestId": "6f45caab-e44d-42d3-4ec0-63378a3ad320"
+  },
+  "blockHash": "0x05e051da99e65937addd90bd3083d764f0467a41196e5925fec2251601171122",
+  "blockNumber": "301964",
+  "cumulativeGasUsed": "29178",
+  "from": "0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb",
+  "gasUsed": "29178",
+  "nonce": "0",
+  "status": "1",
+  "to": "0x45fc7fbac41897662fea70db2e56bf68cc0bddb5",
+  "transactionHash": "0x8728ca79f4bfe5e85786a3d5d690fcd483d7ef211fffae45d9c22b054d6426bd",
+  "transactionIndex": "0"
+}
+
+[{
+	"address": "0x45FC7FBaC41897662fEa70DB2e56BF68cC0bdDB5",
+	"blockNumber": "301964",
+	"blockHash": "0x05e051da99e65937addd90bd3083d764f0467a41196e5925fec2251601171122",
+	"transactionIndex": "0x0",
+	"transactionHash": "0x8728ca79f4bfe5e85786a3d5d690fcd483d7ef211fffae45d9c22b054d6426bd",
+	"data": {
+		"from": "0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb",
+		"to": "0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb",
+		"value": "20"
+	},
+	"subId": "sb-d27352e0-2198-45d7-7adb-cfea40f5968a",
+	"signature": "Transfer(address,address,uint256)",
+	"logIndex": "0"
+}]
+
+
+==========================unload
+curl -X 'POST' \
+  'https://u0dp08kjkt-u0uywqoxjt-connect.us0-aws.kaleido.io/instances/0x45fc7fbac41897662fea70db2e56bf68cc0bddb5/unload?kld-from=0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb&kld-sync=true' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Basic dTBzNnd1dzl1dToxOVpmbW42aXlCSUZLQ21xYWVtM0VtLTZZenpLbW5DNjAxRi12OHVSaERJ' \
+  -d '{
+  "amount": "20"
+}'
+
+{
+  "headers": {
+    "id": "70b40e60-99d8-4bf6-5c27-b64267843207",
+    "type": "TransactionSuccess",
+    "timeReceived": "2023-09-11T14:53:24.251358914Z",
+    "timeElapsed": 5.329998365,
+    "requestOffset": "",
+    "requestId": "61cc6744-523e-4dc8-75ab-6ea195738a55"
+  },
+  "blockHash": "0xcc23b1b0ff1efcc804003b1f453a971c31759dc52e79cdc2144c7ed9cd6721fb",
+  "blockNumber": "302051",
+  "cumulativeGasUsed": "38264",
+  "from": "0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb",
+  "gasUsed": "38264",
+  "nonce": "0",
+  "status": "1",
+  "to": "0x45fc7fbac41897662fea70db2e56bf68cc0bddb5",
+  "transactionHash": "0x859aeeda1b7e2962fa51b72b96723f07c903f9ce8fa7266392a28318e967c9f9",
+  "transactionIndex": "0"
+}
+
+[{
+	"address": "0x45FC7FBaC41897662fEa70DB2e56BF68cC0bdDB5",
+	"blockNumber": "302051",
+	"blockHash": "0xcc23b1b0ff1efcc804003b1f453a971c31759dc52e79cdc2144c7ed9cd6721fb",
+	"transactionIndex": "0x0",
+	"transactionHash": "0x859aeeda1b7e2962fa51b72b96723f07c903f9ce8fa7266392a28318e967c9f9",
+	"data": {
+		"amount": "20",
+		"burner": "0xc22b412c9f3d86d9c1bf65b7d4d81ef0ac4bf6eb"
+	},
+	"subId": "sb-afb08ab8-0592-4fea-6daa-6c2baf72cfe2",
+	"signature": "Burn(address,uint256)",
+	"logIndex": "0"
+}]
