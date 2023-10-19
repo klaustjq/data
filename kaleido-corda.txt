@@ -50,3 +50,69 @@ run vaultQuery contractStateType : io.kaleido.firefly.cordapp.states.PaymentStat
 
 #Query load, transfer, unload req
 run vaultQuery contractStateType : io.kaleido.firefly.cordapp.states.CashMovementState
+
+[ {
+  "data" : {
+    "data" : {
+      "@class" : "io.kaleido.firefly.cordapp.states.CashMovementState",
+      "operator" : "O=PartyB, L=New York, C=US",
+      "settlementBank" : "O=PartyA, L=London, C=GB",
+      "payer" : {
+        "identity" : "O=PartyB, L=New York, C=US",
+        "legalName" : "",
+        "lei" : "",
+        "bic" : "HSBCSGSG1",
+        "addressLn1" : null,
+        "addressLn2" : null
+      },
+      "payee" : {
+        "identity" : "O=PartyC, L=Hong Kong, C=CN",
+        "legalName" : "",
+        "lei" : "",
+        "bic" : "HSBCSGSG1",
+        "addressLn1" : null,
+        "addressLn2" : null
+      },
+      "fromAccount" : {
+        "accountNumber" : "141262568001",
+        "accountName" : "141262568001",
+        "addressLn1" : null,
+        "addressLn2" : null,
+        "bic" : "HSBCSGSG1",
+        "ultimateName" : "141262568001"
+      },
+      "toAccount" : {
+        "accountNumber" : "141225193001",
+        "accountName" : "141225193001",
+        "addressLn1" : null,
+        "addressLn2" : null,
+        "bic" : "HSBCSGSG1",
+        "ultimateName" : "141225193001"
+      },
+      "customerRefNumber" : "EPSITDBX60000",
+      "instructedMVUnit" : "89",
+      "instructedMVCurrency" : "SGD",
+      "entryDate" : "2023-10-18T09:06:37.224Z",
+      "status" : "UNLOAD_REQUEST",
+      "linearId" : {
+        "externalId" : null,
+        "id" : "71f2324b-eb36-4739-9b2c-bed97d169a9b"
+      }
+    },
+    "contract" : "io.kaleido.firefly.cordapp.contracts.CashMovementContract",
+    "notary" : "O=Notary, L=London, C=GB",
+    "encumbrance" : null,
+    "constraint" : {
+      "@class" : "net.corda.core.contracts.SignatureAttachmentConstraint",
+      "key" : "aSq9DsNNvGhYxYyqA9wd2eduEAZ5AXWgJTbTEw3G5d2maAq8vtLE4kZHgCs5jcB1N31cx1hpsLeqG2ngSysVHqcXhbNts6SkRWDaV7xNcr6MtcbufGUchxredBb6"
+    }
+  },
+  "subId" : "sb-01e91850-3bd0-4503-b28c-79d8d763acd5",
+  "signature" : "io.kaleido.firefly.cordapp.states.CashMovementState",
+  "stateRef" : {
+    "txhash" : "4461C234988201A3E706E0B65AE2C11E6615D74C5F339417385BA1AB4B0D1F7E",
+    "index" : 0
+  },
+  "recordedTime" : "2023-10-18T09:06:37.353Z",
+  "consumedTime" : null
+} ]
