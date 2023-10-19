@@ -1,0 +1,52 @@
+=====Payment
+curl -X POST "http://34.38.96.81:8081/paymentRequest" -H  "accept: */*" -H  "Content-Type: application/json" -d "{\"data\":{\"settlementBank\":\"O=PartyA,L=London,C=GB\",\"payer\":\"O=PartyB,L=New York,C=US\",\"payee\":\"\",\"fromAccount\":\"141262568001\",\"toAccount\":\"141225193001\",\"customerRefNumber\":\"EPSITDBX60000\",\"amount\":\"89\",\"currencyCode\":\"SGD\",\"chargeBearer\":\"SLEV\",\"remittanceInfo\":\"t\",\"paymentType\":\"PaymentType\",\"dbtrBicfi\":\"HSBCSGSG1\",\"cdtrBicfi\":\"HSBCSGSG1\"}}"
+
+
+-----PaymentRequest
+curl -X POST "http://34.38.96.81:8080/paymentComplete" -H  "accept: */*" -H  "Content-Type: application/json" -d "{\"key\":\"31a96c63-26a0-488b-b5dc-db9babe95cb1\",\"settlementBankRef\":\"xxxx\",\"settlementDate\":\"2023-05-19T11:59:25.681Z\"}"
+
+{
+  "statusCode" : 200,
+  "status" : true,
+  "message" : "SUCCESS",
+  "data" : "8116959BF4D22F4EF8A17A937BBDC59527B21E8DC73B53DD6CD0B8722C396434"
+}
+
+=====Load
+curl -X POST "http://34.38.96.81:8081/loadRequest" -H  "accept: */*" -H  "Content-Type: application/json" -d "{\"data\":{\"settlementBank\":\"O=PartyA,L=London,C=GB\",\"payer\":\"O=PartyB,L=New York,C=US\",\"payee\":\"O=PartyC,L=Hong Kong,C=CN\",\"fromAccount\":\"141262568001\",\"toAccount\":\"141225193001\",\"customerRefNumber\":\"EPSITDBX60000\",\"amount\":\"89\",\"currencyCode\":\"SGD\",\"dbtrBicfi\":\"HSBCSGSG1\",\"cdtrBicfi\":\"HSBCSGSG1\"}}"
+
+-----LoadComplete
+curl -X POST "http://34.38.96.81:8080/loadCompleted" -H  "accept: */*" -H  "Content-Type: application/json" -d "{\"amount\":\"10\",\"code\":\"0\",\"recipient\":\"11\",\"requestSender\":\"11\",\"txId\":\"0709ed06-4776-485e-ab67-119825233561\",\"settlementBankRef\":\"xx\",\"settlementDate\":\"2023-05-19T11:59:25.681Z\"}"
+
+{
+  "statusCode" : 200,
+  "status" : true,
+  "message" : "SUCCESS",
+  "data" : "A6C505B28813D4D5C48CB4ADBBE38B7B9EAE54BBFFF30BA996F1AA5C81717A44"
+}
+
+=====Transfer
+Transfer
+curl -X POST "http://34.38.96.81:8081/transferRequest" -H  "accept: */*" -H  "Content-Type: application/json" -d "{\"data\":{\"settlementBank\":\"O=PartyA,L=London,C=GB\",\"payer\":\"O=PartyB,L=New York,C=US\",\"payee\":\"O=PartyC,L=Hong Kong,C=CN\",\"fromAccount\":\"141262568001\",\"toAccount\":\"141225193001\",\"customerRefNumber\":\"EPSITDBX60000\",\"amount\":\"89\",\"currencyCode\":\"SGD\",\"dbtrBicfi\":\"HSBCSGSG1\",\"cdtrBicfi\":\"HSBCSGSG1\"}}"
+
+-----transferAccept
+curl -X POST "http://34.38.96.81:8080/transferAcceptence" -H  "accept: */*" -H  "Content-Type: application/json" -d "{\"data\":{\"linearId\":\"e6eaafdd-5b79-4444-a853-aac9bff5a7be\",\"settlementBankRef\":\"xxx\",\"settlementDate\":\"2023-05-19T11:59:25.681Z\"}}"
+
+
+=====Unload
+curl -X POST "http://34.38.96.81:8081/unloadRequest" -H  "accept: */*" -H  "Content-Type: application/json" -d "{\"data\":{\"settlementBank\":\"O=PartyA,L=London,C=GB\",\"payer\":\"O=PartyB,L=New York,C=US\",\"payee\":\"O=PartyC,L=Hong Kong,C=CN\",\"fromAccount\":\"141262568001\",\"toAccount\":\"141225193001\",\"customerRefNumber\":\"EPSITDBX60000\",\"amount\":\"89\",\"currencyCode\":\"SGD\",\"dbtrBicfi\":\"HSBCSGSG1\",\"cdtrBicfi\":\"HSBCSGSG1\"}}"
+
+-----UnloadCompleted
+curl -X POST "http://34.38.96.81:8080/unloadCompleted" -H  "accept: */*" -H  "Content-Type: application/json" -d "{\"burner\":\"xx\",\"code\":\"0\",\"txId\":\"eb381dc3-2557-497a-8476-d2badd60a5f0\",\"settlementBankRef\":\"xx\",\"settlementDate\":\"2023-05-19T11:59:25.681Z\"}"
+
+
+[feil_zou@instance-corda4 glcm-client]$ pwd
+/home/feil_zou/http-server/corda-nodes/glcm-client
+
+sh start-partya-client.sh
+
+#Query payment req
+run vaultQuery contractStateType : io.kaleido.firefly.cordapp.states.PaymentState
+
+#Query load, transfer, unload req
+run vaultQuery contractStateType : io.kaleido.firefly.cordapp.states.CashMovementState
